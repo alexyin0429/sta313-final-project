@@ -3,13 +3,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Embedded Analytics with Tableau</title>
+  <title>Worldwide Domestic Violence toward Women</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #FFFFFF;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .item1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .button {
+      background-color: #f87e0b;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button {
+      transition-duration: 0.4s;
+    }
+
+    .button:hover {
+      background-color: #d29a00c2; /* Green */
+      color: white;
+    }
+    </style>
 </head>
-<body>
-   <iframe width="1335px" height="894px" src="https://public.tableau.com/views/AttitudetowardViolanceWorldMap/domesticviolencestoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+<body bgcolor="#d3c29c">
+    <iframe width="1270px" height="894px" src="https://public.tableau.com/views/AttitudetowardViolanceWorldMap/domesticviolencestoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
     </iframe>
-    <a href="html/second_graph.html">
-      <button>Next Page</button>
-    </a>
+    <p>
+      To see worldwide workplace discrimination toward women, please click:
+      <a class="button" href="html/second_graph.html">
+        Next Page
+      </a>
+    </p>
+  
+    <p>
+      <h1>
+        More Detailed Graph
+      </h1>
+    </p>
+    
+
+    <div class="grid-container">
+      <div class="item1">
+        <iframe width="1270px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot1/violencebycountry2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+        </iframe>
+      </div>
+      <div class="grid-item">
+        <iframe width="635px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot2/mapwithlegalage?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+        </iframe>
+      </div>
+      <div class="grid-item">
+        <iframe width="635px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot3/scatter?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+        </iframe>
+      </div>   
+    </div>
+    
 </body>
 </html>
