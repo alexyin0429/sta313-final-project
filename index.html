@@ -39,44 +39,84 @@
     }
 
     .button:hover {
-      background-color: #d29a00c2; /* Green */
+      background-color: #d29a00c2;
       color: white;
     }
+
+    .button1 {
+      background-color: #d29a00c2;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .text-block {
+      position: absolute;
+      top: 242px;
+      left: 20px;
+      color: gray;
+      padding-left: 20px;
+      padding-right: 20px;
+}
     </style>
 </head>
 <body bgcolor="#d3c29c">
+  <h1>
+    Awareness of Gender Equality
+  </h1>
+  <h2>
+    Are people in different genders being treated EQUALLY?
+  </h2>
+
+  <p>Dashboard 1: Women's Situation at home 
+    <a class="button1" href="index.html">
+      Displaying Below
+    </a> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Dashboard 2: Women's Situation in workplace 
+    <a class="button" href="html/worldwide-workplace-discrimination-toward-women.html">
+    View Dashboard
+    </a>
+  </p>
+  
     <iframe 
       width="1275px"
       height="894px" 
-      src="https://public.tableau.com/views/DomesticViolenceDash/domesticviolencestoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+      src="https://public.tableau.com/views/Dash2plot3/domesticviolencestoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
     </iframe>
-    <p>
-      To see worldwide workplace discrimination toward women, please click:
-      <a class="button" href="html/worldwide-workplace-discrimination-toward-women.html.html">
-        Next Page
-      </a>
-    </p>
+    <div class="text-block">
+      <p>Summary of Income Level Across Continents</p>
+      
+    </div>
   
     <p>
-      <h1>
-        More Detailed Graph
-      </h1>
+      <h3>
+        More Detailed Graphs Shown Below
+      </h3>
     </p>
     
 
     <div class="grid-container">
       <div class="item1">
-        <iframe width="1270px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot1/violencebycountry2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+        <p> Women's attitudes toward domestic violence vary due to many factors, for example culture. Let's look at how many percent of women in a country would accept domestic violence.</p>
+        <iframe width="1270px" height="500px" src="https://public.tableau.com/views/DomesticViolenceplot1/violencebycountry2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+        </iframe>
+
+        <iframe width="1270px" height="500px" src="https://public.tableau.com/shared/H8Q8WX33R?:display_count=n&:origin=viz_share_link">
+        </iframe>
+        
+        <p> Early Marriage is one of the most significant contributors to domestic violence. There is a strong positive correlation between early marriage and domestic violence.</p>
+        <iframe width="1270px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot3/scatter?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
         </iframe>
       </div>
-      <div class="grid-item">
-        <iframe width="635px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot2/mapwithlegalage?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
-        </iframe>
-      </div>
-      <div class="grid-item">
-        <iframe width="635px" height="400px" src="https://public.tableau.com/views/DomesticViolenceplot3/scatter?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
-        </iframe>
-      </div>   
+      
+        
     </div>
     
 </body>
