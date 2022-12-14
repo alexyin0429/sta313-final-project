@@ -37,7 +37,18 @@
       margin: 4px 2px;
       cursor: pointer;
     }
+    
+    .column {
+      flex: 33.33%;
+      padding: 0 4px;
+    }
 
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+}
     </style>
   </style>
 </head>
@@ -84,7 +95,57 @@
           <iframe width="1270px" height="400px" src="https://public.tableau.com/views/Dash2plot3/line2?:language=en-US&:display_count=n&:origin=viz_share_link">
           </iframe>
         </div>   
+        
     </div>
+
+    <!-- <div class="row">
+      <div class="column">
+        <p> 1991</p>
+        <img src="../image/employment_1991.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <p> 1998</p>
+        <img src="../image/employment_1998.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <p> 2005</p>
+        <img src="../image/employment_2005.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <p> 2012</p>
+        <img src="../image/employment_2012.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <p> 2019</p>
+        <img src="../image/employment_2019.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <p> 2021</p>
+        <img src="../image/employment_2021.jpg" style="width:100%">
+      </div>
+    </div> -->
+    <table>
+      <tr>
+        <td><p>Men Employment Share vs. Women Employment Share in 1991</p></td>
+        <td><p>Men Employment Share vs. Women Employment Share in 1998</p></td>
+        <td><p>Men Employment Share vs. Women Employment Share in 2005</p></td>
+      </tr>
+      <tr>
+        <td><img src="../image/employment_1991.jpg" /></td>
+        <td><img src="../image/employment_1998.jpg" /></td>
+        <td><img src="../image/employment_2005.jpg" /></td>
+      </tr>
+      <tr>
+        <td><p>Men Employment Share vs. Women Employment Share in 2012</p></td>
+        <td><p>Men Employment Share vs. Women Employment Share in 2019</p></td>
+        <td><p>Men Employment Share vs. Women Employment Share in 2021</p></td>
+      </tr>
+      <tr>
+        <td><img src="../image/employment_2012.jpg" /></td>
+        <td><img src="../image/employment_2019.jpg" /></td>
+        <td><img src="../image/employment_2021.jpg" /></td>
+      </tr>
+    </table>
     
 </body>
 </html>
