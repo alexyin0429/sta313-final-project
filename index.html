@@ -63,7 +63,22 @@
       color: gray;
       padding-left: 20px;
       padding-right: 20px;
-}
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
     </style>
 </head>
 <body bgcolor="#d3c29c">
@@ -117,6 +132,14 @@
       </div>
       
         
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="image/2000_chernoff.jpeg" alt="2000 Chernoff Face" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="image/2020_chernoff.jpeg" alt="2020 Chernoff Face" style="width:100%">
+      </div>
     </div>
     
 </body>
