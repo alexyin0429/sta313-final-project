@@ -9,7 +9,7 @@
       background-color: #36a6d3fc;
       border: none;
       color: white;
-      padding: 10px 20px;
+      padding: 5px 5px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -37,6 +37,27 @@
       margin: 4px 2px;
       cursor: pointer;
     }
+    .button2 {
+      background-color: #36a6d3fc;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: auto;
+    }
+    .button2 {
+      transition-duration: 0.4s;
+    }
+
+    .button2:hover {
+      background-color: #3fc0f3ab; 
+      color: white;
+    }
+
     
     .column {
       flex: 33.33%;
@@ -48,7 +69,31 @@
       display: flex;
       flex-wrap: wrap;
       padding: 0 4px;
-}
+    }
+    .link-block1 {
+      position: absolute;
+      top: 270px;
+      left: 350px;
+      color: gray;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .link-block2 {
+      position: absolute;
+      bottom: 161px;
+      left: 120px;
+      color: gray;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .link-block3 {
+      position: absolute;
+      bottom: 155px;
+      right: 520px;
+      color: gray;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     </style>
   </style>
 </head>
@@ -57,78 +102,42 @@
     Awareness of Gender Equality
   </h1>
   <h2>
-    Are people in different genders being treated EQUALLY?
+    Does Workplace Discrimination Toward Women Still Exist?
   </h2>
 
-  <p>Dashboard 1: Women's Situation at home 
-    <a class="button" href="../index.html">
+  <p>Dashboard 1: Women's Situation at Home 
+    <a class="button2" href="../index.html">
       View Dashboard
     </a> 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Dashboard 2: Women's Situation in workplace 
+    Dashboard 2: Women's Situation in Workplace 
     <a class="button1" href="html/worldwide-workplace-discrimination-toward-women.html">
     Displaying Below
     </a>
   </p>
     <iframe width="1270px" height="894px" src="https://public.tableau.com/views/Dash2_16707975827370/workplacediscrimination?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
     </iframe>
-    
-
-  <p>
-        <h1>
-          More Detailed Graph
-        </h1>
-    </p>
-    <div class="grid-container">
-        <div class="grid-item">
-          <p>Women’s political representation is an important indicator that reflects gender equality in workspace. Let’s take a look of how each country performs.</p>
-          <iframe width="1270px" height="400px" src="https://public.tableau.com/views/Dash2plot1/PoliticalRepBar?:language=en-US&:display_count=n&:origin=viz_share_link">
-          </iframe>
-        </div>
-        <div class="grid-item">
-          <p>Besides women’s political voice, employment wage gap between sexually is another indicator we should concern about.</p>
-          <iframe width="1270px" height="400px" src="https://public.tableau.com/views/Dash2plot2/elevation?:language=en-US&:display_count=n&:origin=viz_share_link">
-          </iframe>
-        </div>
-        <div class="grid-item">
-          <p>Which countries have the most severe employment wage gap?</p>
-          <iframe width="1270px" height="400px" src="https://public.tableau.com/views/Dash2plot3/line2?:language=en-US&:display_count=n&:origin=viz_share_link">
-          </iframe>
-        </div>   
-        
+    <div class="link-block1">
+      <p><a class="button" href="dsb2_plot1.html">
+        View More Details
+        </a></p>
     </div>
-
-    <!-- <div class="row">
-      <div class="column">
-        <p> 1991</p>
-        <img src="../image/employment_1991.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <p> 1998</p>
-        <img src="../image/employment_1998.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <p> 2005</p>
-        <img src="../image/employment_2005.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <p> 2012</p>
-        <img src="../image/employment_2012.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <p> 2019</p>
-        <img src="../image/employment_2019.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <p> 2021</p>
-        <img src="../image/employment_2021.jpg" style="width:100%">
-      </div>
-    </div> -->
+    <div class="link-block2">
+      <p><a class="button" href="dsb2_plot2.html">
+        View More Details
+        </a></p>
+    </div>
+    <div class="link-block3">
+      <p><a class="button" href="dsb2_plot3.html">
+        View More Details
+        </a></p>
+    </div>
+    <h3 style="text-align: center;">Spike Map of Gender Employment Share Change, Year 1991 to Year 2021</h3>
     <table>
       <tr>
-        <td><p>Men Employment Share vs. Women Employment Share in 1991</p></td>
-        <td><p>Men Employment Share vs. Women Employment Share in 1998</p></td>
-        <td><p>Men Employment Share vs. Women Employment Share in 2005</p></td>
+        <td><p>Year 1991</p></td>
+        <td><p>Year 1998</p></td>
+        <td><p>Year 2005</p></td>
       </tr>
       <tr>
         <td><img src="../image/employment_1991.jpg" /></td>
@@ -136,9 +145,9 @@
         <td><img src="../image/employment_2005.jpg" /></td>
       </tr>
       <tr>
-        <td><p>Men Employment Share vs. Women Employment Share in 2012</p></td>
-        <td><p>Men Employment Share vs. Women Employment Share in 2019</p></td>
-        <td><p>Men Employment Share vs. Women Employment Share in 2021</p></td>
+        <td><p>Year 2012</p></td>
+        <td><p>Year 2019</p></td>
+        <td><p>Year 2021</p></td>
       </tr>
       <tr>
         <td><img src="../image/employment_2012.jpg" /></td>
